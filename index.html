@@ -10,7 +10,26 @@
 <body>
     <!-- Header including side nav bar -->
     <header>
-
+        <nav class="navBar">
+            <div class="navContentWrapper">
+                <div class="navBarHeader">
+                    <div class="navImageContainer">
+                        <img src="./assets/nav-picture.jpg" alt="Picture of Colin">
+                    </div>
+                    <span class="navBarName">Colin Ho</span>
+                    <p class="navBarRole">Front End Developer</p>
+                </div>
+                <div class="navBarMenu">
+                    <ul class="navBarItemList">
+                        <li><a class="navLink" href="#home" data-scroll>Home</a></li>
+                        <li><a class="navLink" href="#about" data-scroll>About</a></li>
+                        <li><a class="navLink" href="#skills" data-scroll>Skills</a></li>
+                        <li><a class="navLink" href="#portfolio" data-scroll>Portfolio</a></li>
+                        <li><a class="navLink" href="#contact" data-scroll>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Start of Sections -->
@@ -19,5 +38,7 @@
             <h1 class="homeFirstName" >Colin <span class="homeLastName">Ho</span></h1>
         </section>
     </div>
+
+    <script src="./js/nav.js"></script>
 </body>
 </html>

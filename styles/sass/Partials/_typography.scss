@@ -1,20 +1,31 @@
 html {
     font-size: 125%;
-}
-
-p {
-    font-family: $mainFont;
-    font-size: 3rem;
-}
-
-button {
     font-family: $mainFont;
 }
 
-footer {
+body {
     font-family: $mainFont;
+    font-size: 0.7rem;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.95;
 }
 
-h1 {
-    font-family: $mainFont; 
+ul,
+li,
+a,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
 }
