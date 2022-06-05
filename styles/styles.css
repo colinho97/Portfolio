@@ -222,6 +222,10 @@ template {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -231,11 +235,19 @@ a {
   display: inline-block;
 }
 
-.sectionsWrapper {
-  max-width: 2560px;
-  width: 90%;
-  margin: 0 auto;
+.allSectionsWrapper {
   padding-left: 11.75rem;
+}
+
+.individualSection {
+  background-color: #fff;
+  padding: 4.25rem 2rem;
+}
+
+.sectionWrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
 }
 
 html {
@@ -269,6 +281,21 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(../assets/main-background.jpg);
+  background-size: cover;
 }
 
 .navBar {
@@ -347,4 +374,32 @@ a {
   font-size: 0.8rem;
   letter-spacing: 0.5px;
   line-height: 100%;
+}
+
+.navBarItemList a.active {
+  color: #dc3545;
+}
+
+@media (min-width: 1200px) {
+  .sectionWrapper {
+    max-width: 1200px;
+  }
+}
+.sectionHeadingContent {
+  margin-bottom: 2.4rem;
+  text-align: left;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.25;
+  line-height: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.sectionDescription {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }

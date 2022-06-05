@@ -68,3 +68,7 @@
     letter-spacing: 0.5px;
     line-height: 100%;
 }
+
+.navBarItemList a.active {
+    color: $orange;
+}
