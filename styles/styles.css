@@ -468,3 +468,56 @@ header {
   font-size: 0.7rem;
   padding: 0.5rem 2.3rem;
 }
+
+.skillsSection {
+  background-color: #f7f7f7;
+}
+
+.contactSection {
+  background-color: #f7f7f7;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.contactForm input::placeholder, .contactForm textarea::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.formElement {
+  margin-bottom: 1.25rem;
+}
+
+.formName,
+.formEmail {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.formSubjust,
+.formMessage,
+.formButton {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}

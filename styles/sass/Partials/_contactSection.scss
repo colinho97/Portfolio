@@ -1,0 +1,30 @@
+.contactSection {
+    background-color: #f7f7f7;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    input, textarea {
+        &::placeholder {
+            color: #6c757d;
+            opacity: 1;
+        }
+    }
+}
+
+.formElement {
+    margin-bottom: 1.25rem;
+    
+}
+
+.formName,
+.formEmail {
+    flex-basis: 50%;
+}
+
+.formSubjust,
+.formMessage,
+.formButton {
+    flex-basis: 100%;
+}
