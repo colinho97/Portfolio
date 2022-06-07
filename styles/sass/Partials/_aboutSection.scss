@@ -1,0 +1,56 @@
+.aboutContainer {
+    display: flex;
+}
+
+.aboutPicture {
+    width: 41.66667%;
+    img {
+        width: 20rem;
+        border: 1px solid #dee2e6;
+        padding: .25rem;
+    }
+}
+
+.aboutContent {
+    width: 58.33333%;
+}
+
+
+//Content Design
+.aboutSubtitle {
+    color: $orange;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+}
+
+.aboutTitle {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.aboutDescription {
+    font-size: 0.75rem;
+    border-bottom: 2px solid rgba(0,0,0,.08);
+    margin-bottom: 0;
+    padding-bottom: 1.35rem;
+}
+
+
+//Button Design
+.aboutButtonsContainer {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.35rem;
+}
+
+.portfolioLinkButton {
+    background-color: $white;
+    color: #222;
+    border: 1px solid #c5c5c5;
+    border-radius: 1.5rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 2.3rem;
+}
