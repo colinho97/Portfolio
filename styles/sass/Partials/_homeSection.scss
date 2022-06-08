@@ -1,0 +1,31 @@
+.homeSection {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.58)), url(../assets/main-background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.homeNameContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homeFirstName {
+    color: $white;
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: .0.015rem;
+    margin-bottom: 1.45rem;
+}
+
+.homeLastName {
+    color: $orange;
+}
+
+.particlesJs {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}

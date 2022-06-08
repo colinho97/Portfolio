@@ -302,12 +302,6 @@ h6 {
   color: #222;
 }
 
-header {
-  min-height: 100vh;
-  background-image: url(../assets/main-background.jpg);
-  background-size: cover;
-}
-
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,6 +406,40 @@ header {
   font-size: 0.75rem;
   margin-bottom: 1rem;
   margin-top: 0;
+}
+
+.homeSection {
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.58)), to(rgba(0, 0, 0, 0.58))), url(../assets/main-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(../assets/main-background.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.homeNameContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.homeFirstName {
+  color: #fff;
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: 0 0.015rem;
+  margin-bottom: 1.45rem;
+}
+
+.homeLastName {
+  color: #dc3545;
+}
+
+.particlesJs {
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .aboutContainer {
