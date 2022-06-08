@@ -3,7 +3,7 @@ const navLinks = document.querySelectorAll('nav a');
 
 const options = {
     root: null, //this represent the viewport
-    rootMargin: '0px 0px -100%',
+    rootMargin: '0px 0px -99%',
 }
 
 const observer = new IntersectionObserver(function(entries, observer) {

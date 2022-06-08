@@ -6,16 +6,27 @@
     display: flex;
     flex-wrap: wrap;
     input, textarea {
+        background-color: $white;
+        border: none;
+        border-bottom: 1px solid #d4d4d4;
+        font-size: 0.7rem;
+        height: 2rem;
+        padding: 0.45rem 0.7rem;
+        line-height: 1.5;
+        width: 100%;
         &::placeholder {
-            color: #6c757d;
+            color: #555;
             opacity: 1;
         }
+    }
+    textarea {
+        height: auto;
     }
 }
 
 .formElement {
-    margin-bottom: 1.25rem;
-    
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem 0 0;    
 }
 
 .formName,
@@ -23,7 +34,7 @@
     flex-basis: 50%;
 }
 
-.formSubjust,
+.formSubject,
 .formMessage,
 .formButton {
     flex-basis: 100%;
