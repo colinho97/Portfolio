@@ -1,3 +1,29 @@
 .skillsSection {
     background-color: #f7f7f7;
 }
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(100%/6);
+    
+
+    .skillIcon {
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
