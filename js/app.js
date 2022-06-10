@@ -11,6 +11,10 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
+// Initializing AOS library
+  AOS.init();
+
+// Particle library settings
 particlesJS('particles-js',
   
   {

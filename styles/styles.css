@@ -345,7 +345,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1.4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 .navImageContainer img {
@@ -363,7 +363,7 @@ h6 {
 
 .navBarRole {
   color: #8a8a8a;
-  margin-top: 0.45rem;
+  margin-top: 0.15rem;
   line-height: 100%;
   margin-bottom: 0;
 }

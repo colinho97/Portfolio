@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin Ho - My Portfolio</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- JS libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -53,10 +58,10 @@
                     </div class="sectionHeadingContent">
                 </div>
                 <div class="aboutContainer">
-                    <div class="aboutPicture">
+                    <div class="aboutPicture" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
                         <img src="./assets/nav-picture.jpg" alt="Picture of Colin">
                     </div>
-                    <div class="aboutContent">
+                    <div class="aboutContent" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
                         <h2 class="aboutSubtitle">Who am i?</h2>
                         <h6 class="aboutTitle">I'm Colin Ho, a Front End Web Developer</h6>
                         <p class="aboutDescription">I am a Front-End Developer with experience building responsive and accessible apps and websites. A passionate individual always striving for success professionally and personally. I am forward-looking with an ongoing urge to constantly learn from others and my own work. My background in Accounting provides me with strong problem-solving, project management and communication skills.</p>
@@ -76,7 +81,7 @@
                         <p class="sectionDescription">What I have to offer</p>
                     </div class="sectionHeadingContent">
                 </div>
-                <ul class="skillsContainer">
+                <ul class="skillsContainer" data-aos="zoom-in-up" data-aos-once="true">
                     <li class="skillItem">
                         <span class="skillIcon devicon-html5-plain"></span>
                         <p>HTML5</p>
@@ -129,16 +134,16 @@
                     </div class="sectionHeadingContent">
                 </div>
                 <div class="portfolioContainer">
-                    <div class="portfolioDefault portfolioOne">
+                    <div class="portfolioDefault portfolioOne" data-aos="zoom-in-right" data-aos-duration="800" data-aos-once="true">
                         <img src="./assets/delicious-ss.png" alt="Picture of delicious project">
                     </div>
-                    <div class="portfolioDefault portfolioTwo">
+                    <div class="portfolioDefault portfolioTwo" data-aos="zoom-in-left" data-aos-duration="800" data-aos-once="true">
                         <img src="./assets/pokemon-ss.png" alt="Picture of pokemon guessing game project">
                     </div>
-                    <div class="portfolioDefault portfolioThree">
+                    <div class="portfolioDefault portfolioThree" data-aos="zoom-in-right" data-aos-duration="800" data-aos-once="true">
                         <img src="./assets/delicious-ss.png" alt="TO BE REPLACED">
                     </div>
-                    <div class="portfolioDefault portfolioFour">
+                    <div class="portfolioDefault portfolioFour" data-aos="zoom-in-left" data-aos-duration="800" data-aos-once="true">
                         <img src="./assets/delicious-ss.png" alt="TO BE REPLACED">
                     </div>
 
@@ -183,8 +188,11 @@
         </footer>
     </div>
 
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
+    
 </body>
 </html>
