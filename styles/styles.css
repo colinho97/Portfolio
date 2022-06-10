@@ -615,6 +615,8 @@ h6 {
   padding: 0.45rem 0.7rem;
   line-height: 1.5;
   width: 100%;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 .contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
   color: #555;
@@ -635,6 +637,10 @@ h6 {
 .contactForm input::placeholder, .contactForm textarea::placeholder {
   color: #555;
   opacity: 1;
+}
+.contactForm input:focus, .contactForm textarea:focus {
+  border-bottom: 1px solid #dc3545;
+  outline: none;
 }
 .contactForm textarea {
   height: auto;

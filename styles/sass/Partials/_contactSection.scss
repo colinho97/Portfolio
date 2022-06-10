@@ -14,9 +14,16 @@
         padding: 0.45rem 0.7rem;
         line-height: 1.5;
         width: 100%;
+        transition: border-color 0.3s ease-in-out;
+
         &::placeholder {
             color: #555;
             opacity: 1;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $orange;
+            outline: none;
         }
     }
     textarea {
