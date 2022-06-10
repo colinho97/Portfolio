@@ -1,54 +1,37 @@
 .portfolioContainer {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.portfolioDefault {
+    flex-basis: 45%;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    border-radius: 1rem;
+    img {
+        width: 25rem;
+        height: auto;
+        align-self: center;
+    }
 }
 
 .portfolioOne {
     background-color: #d9ed92;
-    width: 30rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    img {
-        width: 23rem;
-        height: auto;
-        align-self: flex-end;
-    }
 }
+
 .portfolioTwo {
     background-color: #caf0f8;
-    width: 30rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    img {
-        width: 23rem;
-        height: auto;
-        align-self: flex-end;
-    }
 }
+
 .portfolioThree {
     background-color: blue;
-    width: 30rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    img {
-        width: 23rem;
-        height: auto;
-        align-self: flex-end;
-    }
 }
+
 .portfolioFour {
     background-color: papayawhip;
-    width: 30rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    img {
-        width: 23rem;
-        height: auto;
-        align-self: flex-end;
-    }
 }

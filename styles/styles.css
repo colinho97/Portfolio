@@ -548,83 +548,51 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
+}
+
+.portfolioDefault {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  width: 30rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 1rem;
+}
+.portfolioDefault img {
+  width: 25rem;
+  height: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .portfolioOne {
   background-color: #d9ed92;
-  width: 30rem;
-  height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.portfolioOne img {
-  width: 23rem;
-  height: auto;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .portfolioTwo {
   background-color: #caf0f8;
-  width: 30rem;
-  height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.portfolioTwo img {
-  width: 23rem;
-  height: auto;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .portfolioThree {
   background-color: blue;
-  width: 30rem;
-  height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.portfolioThree img {
-  width: 23rem;
-  height: auto;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .portfolioFour {
   background-color: papayawhip;
-  width: 30rem;
-  height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.portfolioFour img {
-  width: 23rem;
-  height: auto;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .contactSection {
