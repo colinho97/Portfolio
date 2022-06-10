@@ -1,0 +1,54 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portfolioOne {
+    background-color: #d9ed92;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 23rem;
+        height: auto;
+        align-self: flex-end;
+    }
+}
+.portfolioTwo {
+    background-color: #caf0f8;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 23rem;
+        height: auto;
+        align-self: flex-end;
+    }
+}
+.portfolioThree {
+    background-color: blue;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 23rem;
+        height: auto;
+        align-self: flex-end;
+    }
+}
+.portfolioFour {
+    background-color: papayawhip;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 23rem;
+        height: auto;
+        align-self: flex-end;
+    }
+}
