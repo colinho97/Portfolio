@@ -1,0 +1,37 @@
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    min-height: 100vh;
+    z-index: 100;
+    color: $black;
+}
+
+.preloader span {
+    display: inline-block;
+    background-color: $orange;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    margin: 0 8px;
+    transform: translate3d(0);
+    animation: bounce 0.6s infinite alternate;
+}
+
+.preloader span:nth-child(2) {
+    background-color: $white;
+    animation-delay: 0.2s;
+}
+
+.preloader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    to {
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -16px, 0);
+    }
+}

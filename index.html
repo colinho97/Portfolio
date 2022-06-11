@@ -16,34 +16,38 @@
 
 </head>
 <body>
-    <!-- Header including side nav bar -->
-    <header>
-        <nav class="navBar">
-            <div class="navContentWrapper">
-                <div class="navBarHeader">
-                    <div class="navImageContainer">
-                        <img src="./assets/nav-picture.jpg" alt="Picture of Colin">
-                    </div>
-                    <span class="navBarName">Colin Ho</span>
-                    <p class="navBarRole">Front End Developer</p>
-                </div>
-                <div class="navBarMenu">
-                    <ul class="navBarItemList">
-                        <li><a class="navLink active" href="#home">Home</a></li>
-                        <li><a class="navLink" href="#about">About</a></li>
-                        <li><a class="navLink" href="#skills">Skills</a></li>
-                        <li><a class="navLink" href="#portfolio">Portfolio</a></li>
-                        <li><a class="navLink" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <!-- Start of Sections -->
     <div class="allSectionsWrapper">
+        <!-- Header including side nav bar -->
+        <header>
+            <nav class="navBar">
+                <div class="navContentWrapper">
+                    <div class="navBarHeader">
+                        <div class="navImageContainer">
+                            <img src="./assets/nav-picture.jpg" alt="Picture of Colin">
+                        </div>
+                        <span class="navBarName">Colin Ho</span>
+                        <p class="navBarRole">Front End Developer</p>
+                    </div>
+                    <div class="navBarMenu">
+                        <ul class="navBarItemList">
+                            <li><a class="navLink active" href="#home">Home</a></li>
+                            <li><a class="navLink" href="#about">About</a></li>
+                            <li><a class="navLink" href="#skills">Skills</a></li>
+                            <li><a class="navLink" href="#portfolio">Portfolio</a></li>
+                            <li><a class="navLink" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <section id="home" class="homeSection">
-            <div id="particles-js" class="particlesJs"></div>
+            <div id="tsparticles" class="particlesJs"></div>
             <div class="homeNameContainer">
                 <h1 class="homeFirstName" >Colin <span class="homeLastName">Ho</span></h1>
                 
@@ -190,9 +194,10 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/nav.js"></script>
-    <script src="./js/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.0.6/tsparticles.min.js" integrity="sha512-ETA9L0ivUzCoCQXZtOk2SAW/YSs1SEMrU4DMVVDndqaEQNF82xR2vpjsb5gtjLns7d60rYS5lmEPeZteGwiNOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="tsparticles.engine.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-stars@2/tsparticles.preset.stars.bundle.min.js"></script>
     <script src="./js/app.js"></script>
-    
+    <script src="./js/nav.js"></script>
 </body>
 </html>

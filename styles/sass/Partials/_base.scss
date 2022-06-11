@@ -8,8 +8,9 @@ a {
 }
 
 .allSectionsWrapper {
-    
-    
+    opacity: 0.9;
+    display: none;
+    transition: opacity 1s ease-in;
     padding-left: 11.75rem;
 }
 
