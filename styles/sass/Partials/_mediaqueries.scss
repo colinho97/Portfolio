@@ -13,6 +13,7 @@
         }
         .aboutContent {
             text-align: center;
+            width: 90%;
         }
         .aboutButtonsContainer {
             justify-content: center;
@@ -22,13 +23,48 @@
     .sectionHeadingContainer .sectionHeadingContent {
         text-align: center;
     }
+
+    .contactForm .formElement {
+        padding: 0 0.75rem;
+    }
 }
 
-// @media (min-width: 768px) {
-//     .sectionWrapper { 
-//         max-width: 768px;
-//     }
-// }
+@media (max-width: 992px) {
+    .allSectionsWrapper {
+        padding: 0;
+    }
+
+    .navBar {
+        width: 100%;
+        height: 5rem;
+        .navContentWrapper {
+            flex-direction: row;
+        }
+        .navBarHeader {
+            display: none;
+        }
+        .navBarMenu {
+            display: flex;
+            padding-top: 1.6rem;
+            padding-bottom: 0;
+        }
+        .navBarItemList {
+            display: flex;
+            gap: 3rem;
+        }
+    }
+    
+    
+    
+    
+    
+    .contactForm .formName,
+    .contactForm .formEmail {
+        flex-basis: 100%;
+    }
+
+
+}
 
 // @media (min-width: 576px) {
 //     .sectionWrapper { 

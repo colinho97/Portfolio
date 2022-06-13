@@ -25,3 +25,11 @@ const observer = new IntersectionObserver(function(entries, observer) {
 sections.forEach(section => {
     observer.observe(section);
 })
+
+window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        const navActive = document.querySelector(`a[href="#contact"]`);
+        navLinks.forEach(link => link.classList.remove('active'));
+        navActive.classList.add('active');
+    }
+};
