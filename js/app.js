@@ -129,3 +129,37 @@ particlesJS('particles-js',
   }
 
 );
+
+
+//Scroll to top on refresh
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+//Portfolio overlay function (TO BE REFACTORED)
+function toggleOverlay() {
+  let overlayOne = document.querySelector('.overlayOne');
+  const portfolioOne = document.querySelector('.portfolioOne');
+  let overlayTwo = document.querySelector('.overlayTwo');
+  const portfolioTwo = document.querySelector('.portfolioTwo');
+  let overlayThree = document.querySelector('.overlayThree');
+  const portfolioThree = document.querySelector('.portfolioThree');
+  let overlayFour = document.querySelector('.overlayFour');
+  const portfolioFour = document.querySelector('.portfolioFour');
+
+  portfolioOne.addEventListener('click', () => {
+    overlayOne.classList.toggle('active');
+  });
+  portfolioTwo.addEventListener('click', () => {
+    overlayTwo.classList.toggle('active');
+  });
+  portfolioThree.addEventListener('click', () => {
+    overlayThree.classList.toggle('active');
+  });
+  portfolioFour.addEventListener('click', () => {
+    overlayFour.classList.toggle('active');
+  });
+
+}
+
+toggleOverlay();

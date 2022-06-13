@@ -384,9 +384,35 @@ h6 {
   color: #dc3545;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .sectionWrapper {
     max-width: 1200px;
+  }
+}
+@media (max-width: 1370px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer img {
+    border-radius: 50%;
+  }
+  .aboutContainer .aboutContent {
+    text-align: center;
+  }
+  .aboutContainer .aboutButtonsContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .sectionHeadingContainer .sectionHeadingContent {
+    text-align: center;
   }
 }
 .sectionHeadingContent {
@@ -548,18 +574,27 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2.5rem;
+  gap: 3rem;
+}
+
+.portfolioRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .portfolioDefault {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  width: 30rem;
+  width: 22rem;
   height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,10 +602,11 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .portfolioDefault img {
   width: 25rem;
@@ -588,13 +624,134 @@ h6 {
 }
 
 .portfolioThree {
-  background-color: blue;
+  background-color: #ffc8dd;
 }
 
 .portfolioFour {
   background-color: papayawhip;
 }
 
+.overlayDefault {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  opacity: 0.8;
+  width: 22rem;
+  height: 20rem;
+  position: absolute;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #111;
+  color: #fff;
+}
+.overlayDefault h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.015rem;
+  margin: 1rem 0;
+}
+.overlayDefault p {
+  padding-bottom: 2rem;
+  margin: 0 1rem;
+}
+
+.overlayDefault.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolioStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #dc3545;
+}
+.portfolioStack li {
+  background-color: #fff;
+  color: #111;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.portfolioLiveLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.portfolioLiveLinks a {
+  background-color: #dc3545;
+  font-weight: 700;
+  padding: 0.3rem 1.4rem;
+  border-radius: 1rem;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 1312px) {
+  .portfolioContainer {
+    gap: 2rem;
+  }
+
+  .portfolioDefault {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .overlayDefault {
+    width: 20rem;
+    height: 18rem;
+  }
+  .overlayDefault p {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .portfolioRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+
+  .portfolioDefault {
+    width: 100%;
+  }
+  .portfolioDefault img {
+    width: 20rem;
+  }
+
+  .overlayDefault {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .overlayDefault h4 {
+    margin-bottom: 0;
+  }
+  .overlayDefault p {
+    padding-bottom: 1rem;
+    width: 90%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
 .contactSection {
   background-color: #f7f7f7;
 }
