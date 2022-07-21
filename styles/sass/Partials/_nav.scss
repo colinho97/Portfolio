@@ -67,8 +67,30 @@
     font-size: 0.8rem;
     letter-spacing: 0.5px;
     line-height: 100%;
+    transition: 0.3s;
+    &:hover {
+        color: $orange;
+    }
 }
 
 .navBarItemList a.active {
     color: $orange;
+}
+
+
+
+//Hamburger Menu Styles
+.hamburgerContainer {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerBars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: $white;
+    // z-index: 4;
 }

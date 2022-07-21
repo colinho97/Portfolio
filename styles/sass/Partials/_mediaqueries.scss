@@ -66,8 +66,51 @@
 
 }
 
-// @media (min-width: 576px) {
-//     .sectionWrapper { 
-//         max-width: 576px;
-//     }
-// }
+@media (max-width: 700px) {
+
+    .homeFirstName {
+        text-align: center;
+    }
+    
+    // Nav Styles
+    
+
+    .hamburgerContainer {
+        display: block;
+    }
+
+    .hamburgerContainer.active .hamburgerBars:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburgerContainer.active .hamburgerBars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);   
+    }
+    .hamburgerContainer.active .hamburgerBars:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);   
+    }
+
+    .navBarItemList {
+        position: fixed;
+        top: -100%;
+        flex-direction: column;
+        background-color: $black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        &.active {
+            top: 0;
+            margin-top: 5rem;
+        }
+    }
+
+    .navBar {
+        .navBarMenu {
+            justify-content: center;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .navBarItemList {
+            gap: 0;
+        }
+    }
+}
