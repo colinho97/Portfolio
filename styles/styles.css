@@ -353,6 +353,11 @@ h6 {
   border-radius: 50%;
   margin-bottom: 0.8rem;
   width: 5.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 5.5rem;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .navBarName {
@@ -419,8 +424,8 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .aboutContainer img {
-    border-radius: 50%;
+  .aboutContainer .aboutPicture {
+    width: auto;
   }
   .aboutContainer .aboutContent {
     text-align: center;
@@ -586,6 +591,11 @@ h6 {
   width: 20rem;
   border: 1px solid #dee2e6;
   padding: 0.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20rem;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .aboutContent {
