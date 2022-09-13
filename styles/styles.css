@@ -442,6 +442,9 @@ h6 {
   .contactForm .formElement {
     padding: 0 0.75rem;
   }
+  .socialLinksContainer {
+    padding-left: 0.6rem;
+  }
 }
 @media (max-width: 992px) {
   .allSectionsWrapper {
@@ -929,6 +932,45 @@ h6 {
 .formButton {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.formContainer {
+  padding-bottom: 2rem;
+}
+
+.socialLinksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.7rem;
+}
+.socialLinksContainer span {
+  font-size: 2rem;
+}
+
+.socialLinks {
+  color: #111;
+}
+.socialLinks a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialLinks:hover span {
+  color: #dc3545;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footerSection {

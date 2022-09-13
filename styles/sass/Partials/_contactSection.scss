@@ -46,3 +46,32 @@
 .formButton {
     flex-basis: 100%;
 }
+
+.formContainer {
+    padding-bottom: 2rem;
+}
+
+// Social Links Section
+
+.socialLinksContainer {
+    display: flex;
+    span {
+        font-size: 2rem;
+    }
+    gap: 0.7rem;
+}
+
+.socialLinks {
+    color: $black;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.socialLinks:hover span {
+    color: $orange;
+    transition: 0.3s;
+}
